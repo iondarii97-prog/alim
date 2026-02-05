@@ -1,0 +1,110 @@
+/* =========================
+   PRODUCT DETAIL LAYOUT
+========================= */
+
+.product-layout{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:20px;
+}
+
+@media(max-width:1100px){
+  .product-layout{
+    grid-template-columns:1fr;
+  }
+}
+
+/* LEFT CARD */
+.product-main,
+.product-card{
+  background:var(--card-bg);
+  border-radius:14px;
+  padding:16px;
+  box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+
+/* IMAGE */
+.product-image{
+  width:100%;
+  max-height:260px;
+  aspect-ratio:1/1;
+  border-radius:12px;
+  overflow:hidden;
+  background:#e6e6e6;
+}
+
+.product-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* TEXT */
+.product-title{
+  margin-top:10px;
+  font-weight:700;
+  font-size:14px;
+}
+
+.product-sub{
+  margin-top:4px;
+  font-size:12px;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+/* MINI CARDS GRID */
+.warehouse-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:10px;
+}
+
+@media(max-width:1100px){
+  .warehouse-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.product-card--mini{
+  padding:10px 12px;
+  border-radius:12px;
+}
+
+/* MINI CARD TEXT */
+.warehouse-title{
+  font-size:11px;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:700;
+}
+
+.warehouse-name{
+  margin-top:4px;
+  font-size:13px;
+  font-weight:800;
+}
+.product-layout > div:first-child{
+  position:relative;
+}
+
+.product-layout > div:first-child::after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:-10px;
+  width:1px;
+  height:100%;
+  background:#e5e7eb;
+}
+
+@media(min-width:1100px){
+  .product-layout > div:first-child{
+    position:sticky;
+    top:90px;
+    align-self:start;
+  }
+}
+

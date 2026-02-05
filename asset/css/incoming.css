@@ -1,0 +1,88 @@
+/* incoming.css */
+
+.table-responsive{
+  overflow-x:auto !important;
+  overflow-y:visible !important;
+}
+
+.card,
+.card-body{
+  overflow:visible;
+}
+
+.page-content{
+  overflow-x:hidden;
+}
+
+#productsTable td{
+  position:relative;
+}
+
+.autocomplete-list{
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  z-index:9999;
+
+  background:#fff;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+  max-height:220px;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+}
+/* incoming.css */
+
+/* CARD */
+.card{
+  border-radius:14px;
+}
+
+/* TABLE */
+.table input{
+  width:100%;
+}
+
+.total-input{
+  background:#eef1f4;
+}
+
+.unit-input{
+  max-width:90px;
+}
+
+/* TITLE */
+.text-center-title{
+  text-align:center;
+  font-size:22px;
+  font-weight:500;
+  margin-bottom:20px;
+}
+/* AUTOCOMPLETE PORTAL */
+.autocomplete-portal{
+  position:fixed;
+  z-index:10000;
+
+  background:#fff;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+  max-height:220px;
+  overflow-y:auto;
+
+  display:none;
+}
+
+.autocomplete-item{
+  padding:8px 10px;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.autocomplete-item:hover{
+  background:#eef2ff;
+}

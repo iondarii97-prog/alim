@@ -1,0 +1,213 @@
+/* =========================
+   TOPBAR – LIGHT THEME
+========================= */
+
+.topbar{
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.topbar-wrap{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:10px 16px;
+  max-width:100%;
+  overflow:visible;
+}
+
+/* ---------- LINKS ---------- */
+
+.tb-link{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:500;
+  color:#374151;
+  text-decoration:none;
+  white-space:nowrap;
+  transition:.15s;
+}
+
+.tb-link i{
+  font-size:14px;
+  color:#6b7280;
+}
+
+.tb-link:hover{
+  background:#f3f4f6;
+  color:#111827;
+}
+
+.tb-link.active{
+  background:#e0e7ff;
+  color:#1d4ed8;
+}
+
+.tb-link.active i{
+  color:#1d4ed8;
+}
+
+/* ---------- SEPARATOR ---------- */
+
+.tb-sep{
+  color:#9ca3af;
+  margin:0 4px;
+  user-select:none;
+}
+
+/* ---------- DROPDOWN ---------- */
+
+.dropdown{
+  position:relative;
+}
+
+.submenu{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  min-width:220px;
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  padding:6px 0;
+  z-index:1000;
+}
+
+.dropdown:hover > .submenu{
+  display:block;
+}
+
+/* ---------- DROPDOWN ITEMS ---------- */
+
+.dropdown-item{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:8px 14px;
+  font-size:14px;
+  color:#374151;
+  text-decoration:none;
+  transition:.12s;
+}
+
+.dropdown-item:hover{
+  background:#f3f4f6;
+  color:#111827;
+}
+
+/* ---------- SUBMENU LEVEL 2 ---------- */
+
+.submenu-level-2{
+  top:0;
+  left:100%;
+  margin-left:4px;
+}
+
+/* ---------- SUBMENU TOGGLE ---------- */
+
+.submenu-toggle i{
+  font-size:12px;
+  color:#9ca3af;
+}
+
+/* ---------- RIGHT AREA ---------- */
+
+.right-area{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+}
+
+/* ---------- USER ---------- */
+
+.user-btn{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 10px;
+  border-radius:999px;
+  text-decoration:none;
+  color:#374151;
+  transition:.15s;
+}
+
+.user-btn:hover{
+  background:#f3f4f6;
+}
+
+.user-avatar{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.user-name{
+  font-size:14px;
+  font-weight:500;
+}
+
+/* ---------- USER MENU ---------- */
+
+.user-menu{
+  right:0;
+  left:auto;
+  min-width:180px;
+}
+
+/* ---------- MOBILE SCROLL ---------- */
+
+.topbar-wrap::-webkit-scrollbar{
+  height:6px;
+}
+
+.topbar-wrap::-webkit-scrollbar-thumb{
+  background:#d1d5db;
+  border-radius:6px;
+}
+/* =========================
+   SUBMENU LEVEL 2 (3-й уровень)
+========================= */
+
+.dropdown-submenu{
+  position:relative;
+}
+
+/* показываем второй уровень при hover */
+.dropdown-submenu:hover > .submenu{
+  display:block;
+}
+
+/* позиционирование второго уровня */
+.submenu-level-2{
+  position:absolute;
+  top:0;
+  left:100%;
+  margin-left:6px;
+  min-width:220px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  padding:6px 0;
+}
+/* =========================
+   REMOVE LIST DOTS
+========================= */
+
+.topbar ul,
+.submenu,
+.submenu li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

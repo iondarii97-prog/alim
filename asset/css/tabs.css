@@ -1,0 +1,97 @@
+.tabs{
+  display:flex;
+  gap:10px;
+  margin-bottom:16px;
+}
+
+.tab-btn{
+  padding:8px 16px;
+  border-radius:10px;
+  background:#e5e7eb;
+  font-weight:600;
+  cursor:pointer;
+  transition:.15s;
+}
+
+.tab-btn.active{
+  background:#2563eb;
+  color:#fff;
+}
+.tab{
+  display:none;
+}
+
+.tab.active{
+  display:block;
+}
+/* =========================
+   TABS FIX
+========================= */
+
+.nav-tabs{
+  border-bottom:1px solid #e5e7eb;
+  margin-bottom:20px;
+}
+
+.nav-tabs .nav-link{
+  border:none;
+  background:none;
+  font-weight:500;
+  color:#2563eb;
+  padding:10px 14px;
+}
+
+.nav-tabs .nav-link.active{
+  color:#000;
+  border-bottom:2px solid #2563eb;
+}
+
+
+/* FORCE VISIBILITY */
+.tab-content > .tab-pane{
+  display:block;
+  opacity:1 !important;
+}
+
+.tab-content > .tab-pane:not(.active){
+  display:none !important;
+}
+/* ===== VERTICAL TABS LAYOUT ===== */
+
+.vertical-tabs{
+  display:grid;
+  grid-template-columns:140px 1fr; /* ← tabs | content */
+  gap:20px;
+  align-items:start;
+}
+
+/* LEFT tabs */
+.vertical-tabs .nav-pills{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* tab button */
+.vertical-tabs .nav-pills .nav-link{
+  width:100%;
+  text-align:left;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:500;
+  background:#e5e7eb;
+  color:#2563eb;
+  border:none;
+}
+
+/* active tab */
+.vertical-tabs .nav-pills .nav-link.active{
+  background:#2563eb;
+  color:#fff;
+}
+
+/* RIGHT content */
+.vertical-tabs .tab-content{
+  width:100%;
+}
+

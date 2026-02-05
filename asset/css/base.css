@@ -1,0 +1,27 @@
+*{ box-sizing:border-box }
+
+body{
+  margin:0;
+  background:var(--page-bg);
+  color:var(--text);
+  font-family:Inter,system-ui,-apple-system,Arial,sans-serif;
+}
+
+.page-content{
+  padding:20px;
+  max-width:1700px;
+  margin:0 auto;
+}
+
+.card-soft{
+  background:#ffffff;
+  border-radius:16px;
+  box-shadow:0 4px 16px rgba(0,0,0,.06);
+}
+
+.divider{
+  margin:18px 0;
+  border:0;
+  border-top:1px solid var(--border);
+}
+

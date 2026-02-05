@@ -1,0 +1,32 @@
+:root{
+  --page-bg:#f2f4f7;
+  --card-bg:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --topbar-bg:#3f4b63;
+  --topbar-text:#cfd7e3;
+  --topbar-muted:#aeb8c7;
+  --active:#2dd4bf;
+  --submenu-bg:#ffffff;
+  --submenu-text:#334155;
+  --submenu-hover:#f3f6ff;
+  --border:#d1d5db;
+  --primary:#2563eb;
+  --shadow:0 18px 40px rgba(17,24,39,.18);
+}
+
+:root[data-theme="dark"]{
+  --page-bg:#0f172a;
+  --card-bg:#0b1220;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --topbar-bg:#111827;
+  --topbar-text:#e5e7eb;
+  --topbar-muted:#9ca3af;
+  --active:#22c55e;
+  --submenu-bg:#0b1220;
+  --submenu-text:#e5e7eb;
+  --submenu-hover:rgba(148,163,184,.12);
+  --border:rgba(226,232,240,.25);
+  --shadow:0 18px 40px rgba(0,0,0,.35);
+}

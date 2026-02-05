@@ -1,0 +1,6 @@
+:root[data-theme="dark"] .select2-container--default
+.select2-selection--single{
+  background:#0b1220;
+  border:1px solid var(--border);
+  color:#e5e7eb;
+}
